@@ -60,11 +60,18 @@ Here we see that the realism of the inversion solution is better preserved, at t
 
 ## Gradient-based History Matching (with AE)
 
+We can also use autoencoders for dimensionality reduction as we did [here](https://github.com/rsyamil/dimensionality-reduction-autoencoders).
+
 ![Eq7](/readme/eq7_ae_m.png)
+
+Similar to PCA, the update equation then becomes:
 
 ![Eq8](/readme/eq8_ae_iter_update.png)
 
+Where the Jacobian (dm/dzm) is obtained from the decoder. See pending [issues](https://github.com/rsyamil/gradient-based-hm/issues).
+
 ![grad_ae_dim_comp](/readme/grad_ae_dim_comp.png)
+
 
 
 
